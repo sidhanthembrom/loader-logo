@@ -1,0 +1,32 @@
+body{
+    /* height: 500px; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+}
+.loader {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 20px solid #B3D89C;
+    border-top: 20px solid #D0EFB1;
+    position: absolute;
+    /* left: 600px; */
+    /* top: 250px; */
+    animation: spin 0.50s steps(100) 0s infinite normal;
+}
+
+@keyframes spin {
+    from {
+        /* border-top: 20px solid #D0EFB1; */
+        transform: rotate(0deg);
+    }
+
+    to {
+        /* border-top: 20px solid #D0EFB1; */
+        transform: rotate(360deg);
+    }
+
+}
